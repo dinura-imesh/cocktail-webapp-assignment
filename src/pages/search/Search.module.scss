@@ -1,0 +1,15 @@
+.searchbarContainer {
+  display: none;
+  padding: 20px 30px 0px 20px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+  .searchbarContainer {
+    display: block;
+  }
+}
+
+.searchbar {
+  width: 100%;
+}

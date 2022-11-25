@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { CocktailCard } from "../../components/cocktailCard/CocktailCard";
-import { Nav } from "../../components/nav/Nav";
 import FavouritesStore from "../../utils/favourites";
 
 export const Favourites = () => {
@@ -16,7 +15,6 @@ export const Favourites = () => {
 
   return (
     <div className="page">
-      <Nav />
       <div className="card-container">
         {favourites.map((favourite, index) => (
           <CocktailCard id={favourite} key={index} />

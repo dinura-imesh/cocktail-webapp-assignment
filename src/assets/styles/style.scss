@@ -2,6 +2,7 @@ $primaryColor: rgb(253, 76, 0);
 $primaryFontColor: rgb(24, 24, 24);
 $secondaryFontColor: rgb(64, 64, 64);
 $secondaryFontColorLight: rgb(123, 123, 123);
+$primaryFontFamily: "Poppins", sans-serif;
 
 .card-container {
   gap: 20px;
@@ -43,4 +44,17 @@ $secondaryFontColorLight: rgb(123, 123, 123);
 
 .page {
   width: 100%;
+}
+
+input {
+  background-color: #fff;
+  border: none;
+  background-color: rgb(209, 209, 209);
+  border-radius: 4px;
+  padding: 8px 6px;
+  font-size: 0.9em;
+  width: 300px;
+  color: $primaryFontColor;
+  outline: none;
+  font-family: $primaryFontFamily;
 }

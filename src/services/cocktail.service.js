@@ -7,3 +7,7 @@ export const getRandomCocktail = () => {
 export const getCocktailById = (id) => {
   return http.get(`lookup.php?i=${id}`);
 };
+
+export const searchCocktails = (keyword) => {
+  return http.get(`search.php?s=${keyword}`);
+};

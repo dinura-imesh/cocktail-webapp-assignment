@@ -1,6 +1,5 @@
 import React from "react";
 import { CocktailCard } from "../../components/cocktailCard/CocktailCard";
-import { Nav } from "../../components/nav/Nav";
 import styles from "./Home.module.scss";
 import syncIcon from "../../assets/icons/sync.png";
 
@@ -11,7 +10,6 @@ export const Home = () => {
 
   return (
     <div className="page">
-      <Nav />
       <div className="card-container">
         <CocktailCard />
         <CocktailCard />

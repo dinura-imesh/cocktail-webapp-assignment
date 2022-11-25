@@ -6,7 +6,7 @@ import heartFilled from "../../assets/icons/heart_filled.png";
 import { useFavourite } from "../../hooks/useFavourite";
 
 export const CocktailCard = (props) => {
-  const [isLoading, cocktail, error] = useCocktail(props.id);
+  const [isLoading, cocktail, error] = useCocktail(props.id, props.cocktail);
   const [isFavourite, toggleFavourite] = useFavourite(cocktail?.idDrink);
 
   return (

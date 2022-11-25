@@ -1,5 +1,6 @@
 import { Favourites } from "../pages/favourites/Favourites";
 import { Home } from "../pages/home/Home";
+import { Search } from "../pages/search/Search";
 
 export const routes = [
   {
@@ -11,5 +12,10 @@ export const routes = [
     name: "Favourites",
     path: "/favourites",
     component: () => <Favourites />,
+  },
+  {
+    name: "Search",
+    path: "/search",
+    component: () => <Search />,
   },
 ];
