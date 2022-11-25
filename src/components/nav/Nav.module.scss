@@ -1,0 +1,45 @@
+@import "../../assets/styles/style.scss";
+
+.nav {
+  height: 4em;
+  background-color: rgb(245, 245, 245);
+  color: #fff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgb(176, 176, 176);
+}
+
+.navHeader {
+  font-size: 1.4em;
+  color: $primaryColor;
+  font-weight: 400;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.navItem {
+  color: $primaryColor;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.navItemHome {
+  @extend .navItem;
+}
+
+@media only screen and (max-width: 900px) {
+  .navItemHome {
+    display: none;
+  }
+}
+
+.navItem:hover {
+  text-decoration: underline;
+}
+
+.navRoutes {
+  display: flex;
+  gap: 20px;
+}

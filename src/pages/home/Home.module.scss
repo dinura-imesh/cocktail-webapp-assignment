@@ -1,0 +1,27 @@
+@import "../../assets/styles/style.scss";
+
+.reloadIconContainer {
+  position: fixed;
+  z-index: 3;
+  bottom: 20px;
+  right: 20px;
+  background-color: $primaryColor;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 2px 6px $secondaryFontColor;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition-duration: 200ms;
+}
+
+.reloadIconContainer:hover {
+  opacity: 1;
+}
+
+.syncIcon {
+  height: 26px;
+}
